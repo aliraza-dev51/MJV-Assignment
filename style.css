@@ -61,7 +61,7 @@ body{
   justify-content: center;
   min-height: calc(100vh - 100px); /* ensure main fills viewport minus header space */
   background-color: black;
-  margin: 300px auto;
+  margin: 50px auto;
 }
 .sections-container {
     display: flex;
