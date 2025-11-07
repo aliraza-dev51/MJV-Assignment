@@ -22,8 +22,8 @@ body{
   justify-content: space-around;
   align-items: center;
   padding: 10px 20px;
-  z-index: 1000;
-  box-shadow: 0px 0px 12px 0px rgba(245, 245, 245, 0.753);
+  z-index: 1;
+  box-shadow: 0px 0px 12px 0px rgba(245, 245, 245, 0.5);
   backdrop-filter: blur(10px);
 }
 .centerH > a{
@@ -39,9 +39,9 @@ body{
     cursor: pointer;    
     color: #ffffff;
     background-color: #151515;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #c2c3c757;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .arrow{
     width: 5px;
@@ -61,6 +61,7 @@ body{
   justify-content: center;
   min-height: calc(100vh - 100px); /* ensure main fills viewport minus header space */
   background-color: black;
+  margin: 300px auto;
 }
 .sections-container {
     display: flex;
@@ -106,7 +107,7 @@ body{
   width: 100%;
   max-width: 1320px;
  
-  margin: 500px auto;
+  margin: 300px auto;
 }
 
 .case-header {
@@ -218,7 +219,7 @@ body{
 .services {
   width: 90%;
   max-width: 1320px;
-  margin: 500px auto;
+  margin: 300px auto;
 }
 
 .services-header {
@@ -328,7 +329,7 @@ body{
       justify-content: space-between;
       gap: 50px;
       max-width:1320px;
-      margin: 20px auto;
+      margin: 300px auto;
       width: 100%;
     }
 
@@ -397,7 +398,7 @@ body{
     summary::after {
       content: '+';
       font-size: 1.3rem;
-      transition: transform 0.3s;
+      transition: transform 0.8s;
     }
 
     .details[open] summary::after {
@@ -410,3 +411,255 @@ body{
       color: #bbb;
       line-height: 1.5;
     }
+    .contact-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+    }
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.contact-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-left h4 {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.contact-left h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact-left p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 14px;
+  color: #ddd;
+}
+
+  textarea {
+  background: transparent;
+  border: 1px solid #505050;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+input{
+   background: transparent;
+  border: 1px solid #505050;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px 12px;
+  font-size: 14px;  
+}
+
+textarea {
+ 
+  height: 100px;
+}
+.send-btn{
+ background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.send-btn:hover{
+    background-color: #272727;
+    color: #ffffff;
+}
+.contact-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-right img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.newsletter {
+  background-color: #161616;
+  margin-top: 60px;
+  padding: 30px 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.newsletter-text {
+  flex: 2;
+  min-width: 250px;
+}
+
+.newsletter-text h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.newsletter-text p {
+  color: #aaa;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.newsletter-form {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  min-width: 250px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 10px;
+  background: #0d0d0d;
+  color: #fff;
+}
+
+.newsletter-form button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #272727;
+  color: #fff;
+}
+input:required {
+  border: 1px solid rgb(255, 233, 191);
+}
+
+input:invalid {
+  border: 1px solid rgb(95, 95, 95);
+}
+
+input:valid {
+  border: 2px solid rgb(255, 255, 255);
+}
+
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .newsletter {
+    flex-direction: column;
+    text-align: center;
+  }
+  .newsletter-form {
+    width: 100%;
+    justify-content: center;
+  }
+}
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #e5e5e5;
+    background-color: white;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    
+  }
+
+  footer p {
+    width: 60%;
+    margin-bottom: 10px;
+    font-size: 54px;
+    color: #000000;
+    font-weight: 700;
+  }
+
+  .link-num{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+   
+  }
+  footer .contact {
+    font-size: 16px;
+    color: #000;
+    margin-top: 10px;
+  }
+
+  footer .contact a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+
+  footer .contact a:hover {
+    color: #007aff; /* blue hover */
+  }
+
+  footer .social {
+    margin-top: 20px;
+  }
+
+  footer .social a {
+    color: #222;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 8px;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  footer .social a:hover {
+    color: #007aff;
+    transform: translateY(-3px);
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    footer {
+      font-size: 14px;
+    }
+  }
